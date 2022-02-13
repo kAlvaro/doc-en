@@ -13,11 +13,15 @@
    <methodparam><type>CurlHandle</type><parameter>handle</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Execute the given cURL session.
+   Execute the given cURL session and optionally print response.
   </para>
   <para>
    This function should be called after initializing a cURL session and all
-   the options for the session are set. 
+   the options for the session are set.
+  </para>
+  <para>
+   The default behaviour is to print the response body. This can be changed by
+   <link linkend="function.curl-setopt">enabling</link> <constant>CURLOPT_RETURNTRANSFER</constant>. 
   </para>
  </refsect1>
 
