@@ -107,7 +107,7 @@
  <refsect1 role="seealso">
   &reftitle.seealso;
   <simplelist>
-   <member><classname>MongoDB\Driver\ClientEncryption</classname></member>
+   <member><function>MongoDB\Driver\ClientEncryption::__construct</function></member>
    <member><link xlink:href="&url.mongodb.docs;core/security-explicit-client-side-encryption/">Explicit (Manual) Client-Side Field Level Encryption</link> in the MongoDB manual</member>
   </simplelist>
  </refsect1>

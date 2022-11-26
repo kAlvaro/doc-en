@@ -15,6 +15,10 @@
   <para>
    The <link linkend="object.set-state">__set_state()</link> handler.
   </para>
+  <para>
+   Like <methodname>DateTimeImmutable::__set_state</methodname> but works with
+   <classname>DateTime</classname>.
+  </para>
  </refsect1>
 
  <refsect1 role="parameters">

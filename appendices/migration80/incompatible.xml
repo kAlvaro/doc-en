@@ -73,6 +73,11 @@
     </listitem>
     <listitem>
      <para>
+      <literal>mixed</literal> is now a reserved word, so it cannot be used to name a class, interface or trait, and is also prohibited from being used in namespaces.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
       Assertion failures now throw by default. If the old behavior is desired,
       <code>assert.exception=0</code> can be set in the INI settings.
      </para>
@@ -200,7 +205,7 @@
 // Replace
 function my_error_handler($err_no, $err_msg, $filename, $linenum) {
     if (error_reporting() == 0) {
-        return false; // Silenced
+        return false;
     }
     // ...
 }
@@ -208,7 +213,7 @@ function my_error_handler($err_no, $err_msg, $filename, $linenum) {
 // With
 function my_error_handler($err_no, $err_msg, $filename, $linenum) {
     if (!(error_reporting() & $err_no)) {
-        return false; // Silenced
+        return false;
     }
     // ...
 }
@@ -811,7 +816,7 @@ $array["key"];
     <member><methodname>DOMNamedNodeMap::setNamedItem</methodname></member>
     <member><methodname>DOMNamedNodeMap::removeNamedItem</methodname></member>
     <member><methodname>DOMNamedNodeMap::setNamedItemNS</methodname></member>
-    <member><methodname>DOMNamedNodeMap::removeNamedItem</methodname></member>
+    <member><methodname>DOMNamedNodeMap::removeNamedItemNS</methodname></member>
     <member><methodname>DOMText::replaceWholeText</methodname></member>
     <member><methodname>DOMNode::compareDocumentPosition</methodname></member>
     <member><methodname>DOMNode::isEqualNode</methodname></member>
@@ -1315,7 +1320,7 @@ $array["key"];
    <listitem>
     <para>
      <methodname>SplFileObject::seek</methodname> now always seeks to the beginning of the line.
-     Previously, positions <literal>=1</literal> sought to the beginning of the next line.
+     Previously, positions <literal>&gt;=1</literal> sought to the beginning of the next line.
     </para>
    </listitem>
    <listitem>

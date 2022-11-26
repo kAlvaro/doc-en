@@ -52,18 +52,11 @@
     <term><parameter>pos</parameter></term>
     <listitem>
      <para>
-      The starting position (0-based) in the tokenized string.
+      The starting position (0-based) in the tokenized string (the number of bytes).
      </para>
     </listitem>
    </varlistentry>
   </variablelist>
- </refsect1>
-
- <refsect1 role="returnvalues">
-  &reftitle.returnvalues;
-  <para>
-   Returns a new PhpToken instance.
-  </para>
  </refsect1>
 
  <refsect1 role="seealso">
